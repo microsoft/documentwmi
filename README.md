@@ -11,7 +11,7 @@ DocumentWMI is a PowerShell module that includes two cmdlets:
 - **New-WmiHelp**: Create markdown files for a given WMI namespace.
 - **New-WmiHelpToc**: Create a table of contents for those markdown files.
 
-The module also includes help documentation with usage information. For more information on how to use these cmdlets, after you install the module, use the **Get-Help** cmdlet.
+The module also includes help documentation with usage information. For more information on how to use these cmdlets, after you install the module, use the **Get-Help** cmdlet. For markdown versions of the help documentation, see [DocumentWMI module](./docs/DocumentWMI.md).
 
 ## How to install
 
@@ -43,6 +43,7 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 
 - How to file issues and get help: [Support](https://github.com/microsoft/documentwmi/blob/main/SUPPORT.md)
 - Reporting security issues: [Security](https://github.com/microsoft/documentwmi/blob/main/SECURITY.md)
+- Online documentation: [DocumentWMI module](./docs/DocumentWMI.md)
 - Browse WMI namespaces using [WMI Explorer](https://github.com/vinaypamnani/wmie2)
 
 ## Trademarks
