@@ -1,8 +1,8 @@
 @{
     ModuleVersion     = '0.1.0'
     GUID              = 'adac1e12-d8aa-4806-bd3a-3531bab1978e'
-    Author            = 'sewhee@microsoft.com'
-    CompanyName       = 'Microsoft'
+    Author            = 'Microsoft Corporation'
+    CompanyName       = 'Microsoft Corporation'
     Copyright         = '(c) Microsoft. All rights reserved.'
     Description       = 'This module creates documentation for WMI classes in markdown.'
     PowerShellVersion = '5.1'
@@ -10,13 +10,13 @@
     FunctionsToExport = 'New-WmiHelp', 'New-WmiHelpToc'
     PrivateData       = @{
         PSData = @{
-            # Tags = @()            # Tags applied to this module. These help with module discovery in online galleries.
-            # LicenseUri = ''       # A URL to the license for this module.
-            # ProjectUri = ''       # A URL to the main website for this project.
+            Tags = @('WMI', 'Docs', 'markdown')
+            LicenseUri = 'https://github.com/microsoft/documentwmi/blob/main/LICENSE'
+            ProjectUri = 'https://github.com/microsoft/documentwmi'
+            ReleaseNotes = 'https://github.com/microsoft/documentwmi/blob/main/LICENSE'
+            RequireLicenseAcceptance = $false
+            Prerelease = 'beta1'
             # IconUri = ''          # A URL to an icon representing this module.
-            # ReleaseNotes = ''     # ReleaseNotes of this module
-            # Prerelease = ''       # Prerelease string of this module
-            # RequireLicenseAcceptance = $false   # Flag to indicate whether the module requires explicit user acceptance for install/update/save
             # ExternalModuleDependencies = @()    # External dependent modules of this module
         }
     }
