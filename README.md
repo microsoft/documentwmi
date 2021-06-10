@@ -41,8 +41,8 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 
 ## Other resources
 
-- How to file issues and get help: [Support](https://github.com/microsoft/documentwmi/blob/main/SUPPORT.md)
-- Reporting security issues: [Security](https://github.com/microsoft/documentwmi/blob/main/SECURITY.md)
+- How to file issues and get help: [Support](SUPPORT.md)
+- Reporting security issues: [Security](SECURITY.md)
 - Online documentation: [DocumentWMI module](./docs/DocumentWMI.md)
 - Browse WMI namespaces using [WMI Explorer](https://github.com/vinaypamnani/wmie2)
 
