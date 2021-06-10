@@ -1,28 +1,49 @@
-# Project
+# DocumentWMI
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+**DocumentWMI** is a project to help create and maintain developer reference content for 
+Windows Management Instrumentation (WMI) classes, properties, and methods. 
+It originated as a Microsoft hackathon project for the **Microsoft Endpoint Configuration Manager** 
+WMI SDK reference content from the _root\ccm_ and _root\sms_ WMI namespaces. For those namespaces, 
+this tool can generate over 2000 markdown files for the available classes and methods.
 
-As the maintainer of this project, please make a few updates:
+DocumentWMI is a PowerShell module that includes two cmdlets:
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+- **New-WmiHelp**: Create markdown files for a given WMI namespace.
+- **New-WmiHelpToc**: Create a table of contents for those markdown files.
+
+The module also includes help documentation with usage information. For more information on how to use these cmdlets, after you install the module, use the **Get-Help** cmdlet.
+
+## How to install
+
+First fork and clone this repository, or download the module files to a local folder. Then use the following sample PowerShell script to install and import it:
+
+```powershell
+$sourcePath = 'C:\git\documentwmi\module'
+$modules = "$($Env:ProgramFiles)\WindowsPowerShell\Modules\"
+$modulePath = New-Item -Path ( $modules + 'DocumentWMI' ) -ItemType Directory
+Copy-Item -Path ( $sourcePath + '\*' ) -Destination $modulePath
+Import-Module -Name DocumentWMI
+```
 
 ## Contributing
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
+This project welcomes contributions and suggestions. Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
 the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
 
 When you submit a pull request, a CLA bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
+a CLA and decorate the PR appropriately (for example, status check and a comment). Simply follow the instructions
+provided by the bot. You'll only need to do this once across all repos using our CLA.
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+
+## Other resources
+
+- How to file issues and get help: [Support](https://github.com/microsoft/documentwmi/blob/main/SUPPORT.md)
+- Reporting security issues: [Security](https://github.com/microsoft/documentwmi/blob/main/SECURITY.md)
+- Browse WMI namespaces using [WMI Explorer](https://github.com/vinaypamnani/wmie2)
 
 ## Trademarks
 
